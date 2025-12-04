@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Book a site visit for a 2 BHK villa in Idigarai. Gated community villa with car parking and loan assistance. Price 45 Lakhs."
+    content="Book a site visit for a 2 BHK villa in Idigarai. East-facing house inside a gated community with car parking and loan assistance. Price 45 Lakhs."
   />
 
   <style>
@@ -14,7 +14,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     body {
@@ -199,6 +199,32 @@
       margin-top: 0.25rem;
     }
 
+    .details-list {
+      margin-top: 0.6rem;
+      font-size: 0.88rem;
+      color: #cbd5f5;
+    }
+
+    .details-list li {
+      margin-left: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
     .bottom-cta {
       text-align: center;
       padding: 2rem 0 0.5rem;
@@ -245,10 +271,16 @@
       .feature-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 640px) {
       .feature-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .gallery-grid {
         grid-template-columns: minmax(0, 1fr);
       }
       .container {
@@ -270,7 +302,9 @@
     <!-- HERO -->
     <section class="hero">
       <div>
-        <h1>2 BHK Villa <span class="highlight">Idigarai</span></h1>
+        <h1>
+          2 BHK Villa <span class="highlight">Idigarai</span>
+        </h1>
 
         <p class="hero-sub">
           Compact 2 BHK villa in a gated community at Idigarai with good
@@ -308,12 +342,12 @@
       <aside class="hero-image-card">
         <img
           class="hero-image-main"
-          src="front-elevation-2bhk-idigarai.jpg"
+          src="resized_2bhk_IMG-20251204-WA0039.jpg"
           alt="Front elevation of 2 BHK Villa in Idigarai"
         />
         <div class="hero-image-caption">
           <span>Front Elevation</span>
-          <span>Actual Villa Photo</span>
+          <span>Actual Project Photo</span>
         </div>
       </aside>
     </section>
@@ -323,13 +357,13 @@
       <h2>Property Highlights</h2>
       <div class="feature-grid">
         <div class="feature">
-          <div class="feature-title">Bedrooms &amp; Layout</div>
+          <div class="feature-title">Bedrooms & Layout</div>
           <p>2 bedrooms, hall, kitchen and attached bathrooms with good ventilation.</p>
           <small>Smart floor plan suitable for nuclear families.</small>
         </div>
         <div class="feature">
           <div class="feature-title">Amenities</div>
-          <p>Marble flooring, quality doors &amp; windows, car parking space.</p>
+          <p>Marble flooring, quality doors & windows, car parking space.</p>
           <small>Ready-to-move construction with branded fittings.</small>
         </div>
         <div class="feature">
@@ -337,6 +371,48 @@
           <p>Located in Idigarai with quick access to Mettupalayam Road and daily needs.</p>
           <small>Peaceful villa community with good neighbourhood.</small>
         </div>
+      </div>
+
+      <ul class="details-list">
+        <li>Approvals / documents ready – easy for home loan processing.</li>
+        <li>Eligible for housing loan from leading banks.</li>
+        <li>Good rental scope and resale value in this area.</li>
+      </ul>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section class="section">
+      <h2>Property Photos</h2>
+      <p style="font-size:0.9rem; color:#cbd5f5;">
+        Actual photos taken at the site. More photos and walkthrough videos
+        will be shared on WhatsApp after you book a visit.
+      </p>
+
+      <div class="gallery-grid">
+        <img
+          src="resized_2bhk_IMG-20251204-WA0037.jpg"
+          alt="Kitchen view"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0038.jpg"
+          alt="Hall / living area"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0036.jpg"
+          alt="Bedroom with designer door"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0033.jpg"
+          alt="Second bedroom"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0040.jpg"
+          alt="Gated community aerial view"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0039.jpg"
+          alt="Front elevation again"
+        />
       </div>
     </section>
 
@@ -379,7 +455,7 @@
   </a>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
