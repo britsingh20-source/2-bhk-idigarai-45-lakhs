@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>2 BHK Villa – Idigarai | 45 Lakhs | Site Visit Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Book a site visit for a 2 BHK villa in Idigarai. East-facing house inside a gated community with car parking and loan assistance. Price 45 Lakhs."
+  />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    header {
+      padding: 0.75rem 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .brand-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 2px solid #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+      padding: 1.5rem 0 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 span.highlight {
+      background: linear-gradient(to right, #38bdf8, #a855f7);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 0.95rem;
+      color: #cbd5f5;
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tag {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      font-size: 0.8rem;
+    }
+
+    .price {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .location {
+      font-size: 0.95rem;
+      color: #a5b4fc;
+      margin-bottom: 1rem;
+    }
+
+    .cta-main {
+      margin-bottom: 0.6rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      border-radius: 999px;
+      padding: 0.9rem 1.8rem;
+      border: none;
+      cursor: pointer;
+      font-size: 0.98rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #022c22;
+      box-shadow: 0 10px 25px rgba(22, 163, 74, 0.55);
+    }
+
+    .btn-primary span.icon {
+      font-size: 1.2rem;
+    }
+
+    .mini-note {
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    .hero-image-card {
+      background: #020617;
+      border-radius: 1.4rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 0.9rem;
+      overflow: hidden;
+    }
+
+    .hero-image-main {
+      width: 100%;
+      border-radius: 1.1rem;
+      height: 260px;
+      object-fit: cover;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-image-caption {
+      font-size: 0.8rem;
+      color: #cbd5f5;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section {
+      padding: 1.5rem 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .feature {
+      background: #020617;
+      border-radius: 0.9rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    .feature-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .feature small {
+      display: block;
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-top: 0.25rem;
+    }
+
+    .details-list {
+      margin-top: 0.6rem;
+      font-size: 0.88rem;
+      color: #cbd5f5;
+    }
+
+    .details-list li {
+      margin-left: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    .bottom-cta {
+      text-align: center;
+      padding: 2rem 0 0.5rem;
+    }
+
+    .bottom-cta p {
+      margin-bottom: 1rem;
+      color: #cbd5f5;
+    }
+
+    footer {
+      padding: 1.5rem 0 2rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    /* Floating WhatsApp button */
+    .whatsapp-float {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #16a34a;
+      box-shadow: 0 10px 30px rgba(22, 163, 74, 0.6);
+      z-index: 40;
+    }
+
+    .whatsapp-float img {
+      width: 28px;
+      height: 28px;
+      display: block;
+    }
+
+    @media (max-width: 840px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .feature-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .container {
+        padding-inline: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="brand-badge">PF</div>
+        <span>Property Finder</span>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>
+          2 BHK Villa <span class="highlight">Idigarai</span>
+        </h1>
+
+        <p class="hero-sub">
+          Compact 2 BHK villa in a gated community at Idigarai with good
+          ventilation, car parking and peaceful surroundings. Ideal for small
+          families and first home buyers.
+        </p>
+
+        <div class="tags">
+          <span class="tag">2 BHK</span>
+          <span class="tag">Gated Community</span>
+          <span class="tag">Loan Available</span>
+        </div>
+
+        <div class="price">₹ 45 Lakhs (Negotiable)</div>
+        <div class="location">Idigarai, Coimbatore</div>
+
+        <div class="cta-main">
+          <a
+            href="https://wa.me/917824894177?text=Hi%2C%20I%20want%20to%20book%20a%20site%20visit%20for%20the%202%20BHK%20villa%20in%20Idigarai%20priced%20at%2045%20Lakhs."
+            target="_blank"
+          >
+            <button class="btn-primary">
+              <span class="icon">📅</span>
+              Book a Site Visit on WhatsApp
+            </button>
+          </a>
+        </div>
+        <p class="mini-note">
+          WhatsApp will open with a pre-filled message. Just send it and our
+          team will reply with greetings and full details.
+        </p>
+      </div>
+
+      <!-- MAIN IMAGE CARD – FRONT ELEVATION -->
+      <aside class="hero-image-card">
+        <img
+          class="hero-image-main"
+          src="resized_2bhk_IMG-20251204-WA0039.jpg"
+          alt="Front elevation of 2 BHK Villa in Idigarai"
+        />
+        <div class="hero-image-caption">
+          <span>Front Elevation</span>
+          <span>Actual Project Photo</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PROPERTY DETAILS -->
+    <section class="section">
+      <h2>Property Highlights</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="feature-title">Bedrooms & Layout</div>
+          <p>2 bedrooms, hall, kitchen and attached bathrooms with good ventilation.</p>
+          <small>Smart floor plan suitable for nuclear families.</small>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Amenities</div>
+          <p>Marble flooring, quality doors & windows, car parking space.</p>
+          <small>Ready-to-move construction with branded fittings.</small>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Location Advantage</div>
+          <p>Located in Idigarai with quick access to Mettupalayam Road and daily needs.</p>
+          <small>Peaceful villa community with good neighbourhood.</small>
+        </div>
+      </div>
+
+      <ul class="details-list">
+        <li>Approvals / documents ready – easy for home loan processing.</li>
+        <li>Eligible for housing loan from leading banks.</li>
+        <li>Good rental scope and resale value in this area.</li>
+      </ul>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section class="section">
+      <h2>Property Photos</h2>
+      <p style="font-size:0.9rem; color:#cbd5f5;">
+        Actual photos taken at the site. More photos and walkthrough videos
+        will be shared on WhatsApp after you book a visit.
+      </p>
+
+      <div class="gallery-grid">
+        <img
+          src="resized_2bhk_IMG-20251204-WA0037.jpg"
+          alt="Kitchen view"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0038.jpg"
+          alt="Hall / living area"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0036.jpg"
+          alt="Bedroom with designer door"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0033.jpg"
+          alt="Second bedroom"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0040.jpg"
+          alt="Gated community aerial view"
+        />
+        <img
+          src="resized_2bhk_IMG-20251204-WA0039.jpg"
+          alt="Front elevation again"
+        />
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="bottom-cta">
+      <p>
+        Like this 2 BHK villa? Book a site visit now and discuss price, loan
+        options and interior changes directly on WhatsApp.
+      </p>
+      <a
+        href="https://wa.me/917824894177?text=Hi%2C%20I%20want%20to%20book%20a%20site%20visit%20for%20the%202%20BHK%20villa%20in%20Idigarai%20priced%20at%2045%20Lakhs."
+        target="_blank"
+      >
+        <button class="btn-primary">
+          <span class="icon">💬</span>
+          Book Site Visit &amp; Get Greetings
+        </button>
+      </a>
+      <p class="mini-note" style="margin-top:0.5rem;">
+        You will receive a greeting message and confirmation once we get your WhatsApp enquiry.
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Property Finder. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Floating WhatsApp Icon -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/917824894177?text=Hi%2C%20I%20am%20interested%20in%20the%202%20BHK%20villa%20in%20Idigarai%20priced%20at%2045%20Lakhs."
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+    />
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
